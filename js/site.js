@@ -8,7 +8,7 @@ function reverseString() {
         errorText.innerText = ""
     }
 
-    let cleanWord = userWord.replace(/\W+/g, "").toLowerCase();
+    let cleanWord = userWord.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
     // alert(userWord)
     // alert(cleanWord)
     let start = cleanWord.length-1;
@@ -28,7 +28,7 @@ function reverseString() {
         } else if(userWord[i].match(/[a-z]/) != null){
             prettyWord += newWord[j].toLowerCase()
             j++
-        } else if(userWord[i].match(/\W/) != null){ //if nonword character, put same character in pretty word
+        } else if(userWord[i].match(/[^a-zA-Z0-9]/) != null){ //if nonword character, put same character in pretty word
             prettyWord+= userWord[i]
         } else{// handles numbers and underscores
             prettyWord += newWord[j]
