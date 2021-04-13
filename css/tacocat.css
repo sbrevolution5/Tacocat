@@ -13,12 +13,12 @@
 .footer-color, .navbar-color {
     color: #222222;
     background-color: #bb3131;
-    font-family: 'Concert One';
+    font-family: 'Raleway', sans-serif;
 }
 a{
     color: #333333;
     font-size: larger;
-    /* font-weight: bold; */
+    font-weight: bold;
 }
 .btn{
     background-color: #d43535;
@@ -28,7 +28,7 @@ a{
     animation: blinker 1s linear 3 ;
 }
 h1, a, p, form, button, input{
-    font-family: 'Concert One';
+    font-family: 'Raleway', sans-serif;
 }
 body {
     background: #bf4a06;
