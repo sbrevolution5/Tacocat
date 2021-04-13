@@ -1,9 +1,13 @@
+*{
+    color:#333333;
+}
 .footer-color, .navbar-color {
-    color: #cccccc;
-    background-color: #D90B0B;
+    color: #444444;
+    background-color: #bd0a0a;
 }
 a{
-    color: #bbbbbb;
+    color: #333333;
+    font-weight: bold;
 }
 .text-muted-alt{
     color: #99841d;
