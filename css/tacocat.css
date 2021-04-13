@@ -5,11 +5,11 @@
 }
 @-webkit-keyframes blinker{
     from { opacity: 1.0}
-    to { opacity: 0.0;}
+    to { opacity: 0.0}
 }
 *{
     color:#333333;
-    font-family: 'Concert One'
+    font-family: 'Concert One';
 }
 .footer-color, .navbar-color {
     color: #222222;
