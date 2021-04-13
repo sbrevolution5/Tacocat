@@ -25,7 +25,7 @@ a{
 }
 
 .text-danger{
-    animation: blinker 1s linear 3 ;
+    animation: blinker 1s linear infinite ;
 }
 h1, a, p, form, button, input{
     font-family: 'Raleway', sans-serif;
