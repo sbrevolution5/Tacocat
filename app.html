@@ -55,25 +55,29 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-        <h1 class="mt-5">Application page</h1>
-        <p class="lead">Here's where a user can use my app</p>
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <p>Grid based element</p>
+                    <h2>Reverse a string</h2>
                 </div>
+            </div>
+            <div class="row">
                 <div class="col">
-                    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Here's a button</button>
-                </div>
-                <div class="col">
-                    <div class="form-group">
-                      <label for="">Text input</label>
-                      <input type="text"
-                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="Input goes here">
-                      <small id="helpId" class="form-text text-muted">sample input</small>
+                    <div class="form">
+                        <div class="form-group">
+                            <input type="text" id="tacoCat" class="form-control" placeholder="Input 2 or more letters">
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary form-control" id="tacoBtn">Reverse the
+                                string</button>
+                        </div>
                     </div>
                 </div>
-                
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>The string reversed is: <span id="flipped"></span></p>
+                </div>
             </div>
         </div>
 
@@ -96,6 +100,10 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="js/site.js"></script>
+    <script>
+        document.getElementById("tacoBtn").addEventListener("click", reverseString)
     </script>
 </body>
 
