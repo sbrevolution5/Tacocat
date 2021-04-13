@@ -8,9 +8,31 @@ function reverseString() {
     for (let i = start; i >= 0; i--) {
         newWord+= cleanWord[i]
     }
+    // This section is to display capitalization and punctuation to the user
+    let prettyStart = userWord.length
+    let prettyWord= ""
+    // j is used to not skip letters in the new word.  Only increments when a letter is used
+    let j = 0
+    for (let i = 0; i< prettyStart; i++) {
+        if(userWord[i].match(/[A-Z]/) != null){
+            prettyWord += newWord[j].toUpperCase()
+            j++
+        } else if(userWord[i].match(/[a-z]/) != null){
+            prettyWord += newWord[j].toLowerCase()
+            j++
+        } else if(userWord[i].match(/\W/) != null){ //if nonword character, put same character in pretty word
+            prettyWord+= userWord[i]
+        } else{// handles numbers and underscores
+            prettyWord += newWord[j]
+            j++
+        }
+        
+    }
     let output= document.getElementById("flipped");
     output.innerText = newWord;
-    result = document.getElementById("yesOrNo")
+    let prettyOut = document.getElementById("prettyOut");
+    prettyOut.innerText = prettyWord;
+    let result = document.getElementById("yesOrNo")
     if (newWord == cleanWord) {
         confetti.start(1000)
         
