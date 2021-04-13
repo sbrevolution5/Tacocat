@@ -1,17 +1,32 @@
+@keyframes blinker {
+    50%{
+        opacity:0;
+    }
+}
+@-webkit-keyframes blinker{
+    from { opacity: 1.0}
+    to { opacity: 0.0;}
+}
 *{
     color:#333333;
+    font-family: 'Concert One'
 }
 .footer-color, .navbar-color {
-    color: #444444;
-    background-color: #bd0a0a;
+    color: #222222;
+    background-color: #bb3131;
+    font-family: 'Concert One';
 }
 a{
     color: #333333;
     font-size: larger;
     /* font-weight: bold; */
 }
-.text-muted-alt{
-    color: #99841d;
+.btn{
+    background-color: #d43535;
+}
+
+.text-danger{
+    animation: blinker 1s linear 3 ;
 }
 body {
     background: #bf4a06;
