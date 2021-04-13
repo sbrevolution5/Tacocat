@@ -78,6 +78,9 @@
                 <div class="col">
                     <p>The string reversed is: <span id="flipped"></span></p>
                 </div>
+                <div class="col">
+                    <p>Is it a palindrome? <span id="yesOrNo"></span></p>
+                </div>
             </div>
         </div>
 
@@ -101,8 +104,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="js/confetti.js"></script>
     <script src="js/site.js"></script>
     <script>
+        confetti.maxCount= 2000;
+
         document.getElementById("tacoBtn").addEventListener("click", reverseString)
     </script>
 </body>
