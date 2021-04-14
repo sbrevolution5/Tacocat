@@ -2,12 +2,14 @@ function reverseString() {
     let userWord = document.getElementById("tacoCat").value;
     let errorText = document.getElementById("errorText");
     if(userWord == ""){
-        errorText.innerText ="Error: Please enter a word!";
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+            footer: 'You must enter a word!'
+        })
         return
-    }else{
-        errorText.innerText = ""
     }
-
     let cleanWord = userWord.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
     // alert(userWord)
     // alert(cleanWord)
